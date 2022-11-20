@@ -1,0 +1,22 @@
+.cbz-list {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0;
+  list-style-type: none;
+}
+
+.cbz-link {
+  display: inline-block;
+  padding: 12px;
+  min-width: 320px;
+  font-size: 1.6rem;
+  background-color: transparent;
+  border: none;
+}
+.cbz-link:hover,
+.cbz-link:focus {
+    background-color: var(--palette-primary-light);
+}

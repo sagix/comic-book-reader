@@ -1,10 +1,31 @@
+html {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  --palette-primary: #0097a7;
+  --palette-primary-light: #56c8d8;
+  --palette-primary-dark: #006978;
+  --palette-secondary: #ffa000;
+  --palette-secondary-light: #ffd149;
+  --palette-secondary-dark: #c67100;
+  --palette-disable: #888;
+  font-size: 62.5%;
+}
+
 body {
+  font-size: 1.6rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2.0rem;
 }
 
 code {

@@ -1,0 +1,71 @@
+header h1{
+    font-size: 4.8rem;
+    font-weight: 800;
+}
+
+header strong {
+    color:var(--palette-primary);
+    font-weight: 900;
+}
+
+.form-container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.drag{
+    opacity: 0.5;
+}
+
+.button-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    width: 320px;
+    height: 320px;
+}
+.button-image img {
+    width: 50%;
+    height: 50%;
+}
+.button-image span {
+    font-size: 1.6rem;
+}
+
+.form-files, .form-library{
+    box-sizing: border-box;
+    border: 4px solid transparent;
+}
+
+.form-files {
+    background-color: var(--palette-primary-light);
+}
+.form-files:hover {
+    border-color:  var(--palette-primary-dark);
+}
+.form-files input {
+    display: none;
+}
+
+.form-library {
+    background-color: var(--palette-secondary-light);
+}
+.form-library:hover {
+    border-color: var(--palette-secondary-dark);
+}
+.form-library.disabled{
+    background-color: var(--palette-disable);
+    opacity: 0.3;
+}
+
+.form-library .disabled-message{
+    display: none;
+}
+
+.form-library.disabled .disabled-message{
+    display: initial;
+}

@@ -1,0 +1,28 @@
+.toolbar {
+    display: grid;
+    grid-template-areas: "main-action title";
+    grid-template-columns: 48px 4fr 48px;
+    align-items: center;
+}
+
+.toolbar h1 {
+    margin: 0;
+    font-size: 2.0rem;
+    grid-area: title;
+}
+
+.toolbar-action {
+    line-height: 48px;
+    background-color: transparent;
+    border: none;
+    font-size: 2.0rem;
+}
+
+.toolbar-action-main {
+    grid-area: action-main;
+}
+
+.toolbar-action:hover,
+.toolbar-action:focus {
+    background-color: var(--palette-primary-light);
+}
