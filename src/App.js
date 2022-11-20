@@ -12,16 +12,13 @@ function App() {
 
   useEffect(() => {
     if (chapter === null) {
-      setNext(null)
+      setNext(null);
     } else {
       const nextIndex = chapters.indexOf(chapter) + 1;
-      console.log(nextIndex)
       if (nextIndex < chapters.length) {
-        console.log(chapters[nextIndex])
-        setNext(chapters[nextIndex])
+        setNext(chapters[nextIndex]);
       } else {
-        console.log("end")
-        setNext(null)
+        setNext(null);
       }
     }
   }, [chapter, chapters]);
